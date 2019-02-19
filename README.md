@@ -1,5 +1,6 @@
 # CPAR
 Working with the Performance API (PAPI) -> http://icl.cs.utk.edu/papi/
+
 Python lib: https://github.com/flozz/pypapi
 
 ## CPAR Project 1
@@ -36,7 +37,7 @@ Write a report of up to 6 pages explaining the algorithm versions and analyzing 
 
 Justify  the  performance  parameters  selected  and  use  them  to  evaluate and compare the versions implemented. 
 
-### To be deliveredon: 22/03/2019 (Friday)
+### To be delivered on: 22/03/2019 (Friday)
 
 #### Parameters for Report Evaluation:
 
