@@ -144,7 +144,7 @@ def cache_sizes_block():
     plt.clf()
 
     for val in vals:
-        for size in [128, 256]:
+        for size in sizes:
             env_var = 'L1DSIZE='+str(val)
             run_cmd = ['./matrix.out', 'block', str(size)]
             
