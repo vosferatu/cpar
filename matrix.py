@@ -65,4 +65,4 @@ if __name__ == "__main__":
 			pprint.pprint("Matrix C: ")
 			pprint.pprint(C)
 
-		pprint.pprint("Time to run implementation: {0:0.3f}ms.".format(elapsed_time*1000))
+		pprint.pprint("Time to run implementation with size: {0}x{0}, {1:0.3f}ms.".format(size, elapsed_time*1000))

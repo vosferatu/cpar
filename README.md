@@ -22,7 +22,7 @@ Register the  processing  time  for  the several versions  of  the  algorithm,  
 
 Implement   a   version   that   multiplies   an   element   from   the   first   matrix   by   the correspondent line of the second matrix. 
 
-Register the processing time for the two versions of the algorithm, for input matrices from 600x600 to 3000x3000 elements with increments in both dimensions of 400. Register the processing time from 4000x4000to 10000x10000 with intervals of 2000.
+Register the processing time for the two versions of the algorithm, for input matrices from 600x600 to 3000x3000 elements with increments in both dimensions of 400. Register the processing time from 4000x4000 to 10000x10000 with intervals of 2000.
 
 
 ### 3. 
