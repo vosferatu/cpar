@@ -52,11 +52,11 @@ if __name__ == "__main__":
 		t = time.process_time()
 		elapsed_time = 0
 
-		for i in range(10):
+		for i in range(3):
 			locals()[imp](A, B, C)
 			C = default_c.copy()
 
-		elapsed_time = (time.process_time() - t)/10
+		elapsed_time = (time.process_time() - t)/3
 		
 		if( "-v" in sys.argv or "--verbose" in sys.argv):
 			#print("Matrix A and B: {} \n Matrix C: {}".format(A, C))

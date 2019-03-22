@@ -11,38 +11,6 @@ using namespace std;
 
 #define SYSTEMTIME clock_t
 
-static double size3_grad[3][3] =
-{	
-	{1, 2, 3},
-	{4, 5, 6},
-	{7, 8, 9} 
-};
-
-static double size3_1[3][3] =
-{	
-	{1, 1, 1},
-	{1, 1, 1},
-	{1, 1, 1} 
-};
-
-static double size5_grad[5][5] =
-{	
-	{1, 2, 3, 4, 5},
-	{6, 7, 8, 9, 10},
-	{11, 12, 13, 14, 15},
-	{16, 17, 18, 19, 20},
-	{21, 22, 23 ,24, 25} 
-};
-
-static double size5_1[5][5] =
-{	
-	{1, 1, 1, 1, 1},
-	{1, 1, 1, 1, 1},
-	{1, 1, 1, 1, 1},
-	{1, 1, 1, 1, 1},
-	{1, 1, 1, 1, 1}
-};
-
 double * gen_matrix(int size, bool grad){
 
 	double * res = (double *)malloc((size * size) * sizeof(double));
@@ -92,7 +60,11 @@ double * matrix_block(double * A, double * B, double * C, int size){
 // tiled (parallel) matrix multiplication
 // from /sys/devices/system/cpu/cpu0/cache/index0
 // cat c
-    int incr = 32;
+    
+    const char* env_p = std::getenv("L1DSIZE");
+
+    int incr = atoi(env_p);
+
     for (i = 0; i < size; i += incr) {
          for (j = 0; j < size; j += incr) {
              C[i*size+j] = 0.0;
@@ -223,7 +195,7 @@ int main(int argc, char const *argv[])
 
 		size = atoi(argv[2]);
 
-		if(!(size > 0 && size < 16384 && ispowerof2(size))){
+		if(!(size > 0 && size < 16384 )){
 			cout << "Size needs to be between 0 and 16384 and power of 2. \n";
 			return -1;
 		}
@@ -235,8 +207,8 @@ int main(int argc, char const *argv[])
 
 
 	if(testing)
-		time_implementation(imp, size, 10);
+		time_implementation(imp, size, 3);
 	else
-		time_implementation(imp, size, 10);
+		time_implementation(imp, size, 3);
 	return 0;
 }
