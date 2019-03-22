@@ -17,11 +17,11 @@ valgrind_call = "valgrind --tool=cachegrind " # valgrind --tool=cachegrind ./mat
 size1 = [x for x in range(600, 3001, 400)]
 size2 = [x for x in range(4000, 10001, 2000)]
 
-#sizes = size1 + size2
+sizes = size1 + size2
 
 #sizes = [32, 64, 128, 256, 512, 1024, 2048, 4096, 8192]
 
-sizes = [32, 64, 128]
+#sizes = [32, 64, 128]
 
 times = {}
 
