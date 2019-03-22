@@ -1,0 +1,77 @@
+\documentclass[a4paper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{wrapfig}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\begin{document}
+
+\setlength{\textwidth}{16cm}
+\setlength{\textheight}{22cm}
+
+\title{\Huge\textbf{Project 1  - Performance evaluation of a single core}\linebreak\linebreak\linebreak
+\Large\textbf{Report}\linebreak\linebreak
+\linebreak\linebreak
+\includegraphics[scale=0.1]{general/feup-logo.png}\linebreak\linebreak
+\linebreak\linebreak
+\Large{Integrated Masters in Informatics and Computing Engineering} \linebreak\linebreak
+\Large{Parallel Computing}\linebreak
+}
+
+\author{\textbf{Group:}\\
+\begin{tabular}{lll}
+Gonçalo Moreno & up201503871 & up201503871@fe.up.pt \\
+João Mendes & up201505439 & up201505439@fe.up.pt \\
+\end{tabular}
+\linebreak\linebreak \\
+ \\ Faculdade de Engenharia da Universidade do Porto \\ Rua Roberto Frias, s\/n, 4200-465 Porto, Portugal \linebreak\linebreak\linebreak
+\linebreak\linebreak\vspace{1cm}}
+
+\maketitle
+\thispagestyle{empty}
+
+\renewcommand{\contentsname}{Index}
+
+\tableofcontents
+
+\pagebreak
+
+\section{Introduction}
+
+In this project we were asked to study the effect on the processor performance of the memory hierarchy when accessing large amounts of data.\par
+
+Instead of starting with making a parallel version of the algorithm, or even thinking of improving the hardware for better results, we were challenged to change the algorithm in order to take advantage of the algorithm characteristics. Therefore, we are evaluating if parallel computing is always necessary and if we can do enhancements before recurring to it.\par
+
+For this study, the product of two matrices was used because it is a resource heavy operation. This requires large memory access and allows to evaluate the performance of the CPU. Memory access is quite expensive, so the CPU cache memory keeps data available faster. This advantage comes at a price, cache memory is much smaller and as to be used in an intelligent way.\par
+
+The 1st algorithm is naive, doing the operation sequentially and the 2nd takes advantage of cache memory, multiplying line by line.\par
+
+Cache miss occurs within cache memory access modes and methods. For each new request, the processor searched the primary cache to find that data. If the data is not found, it is considered a cache miss.\par
+
+Each cache miss slows down the overall process because after a cache miss, the central processing unit (CPU) will look for a higher level cache, such as L1, L2, L3 and random access memory (RAM) for that data.\par
+
+We will analyse the cache behavior through \href{Valgrind}{valgrind.org} - a programming tool for memory debugging, memory leak detection, and profiling.
+
+\section{Problem Description}
+
+\section{Algorithms Explanation}
+
+\subsection{Algorithm 1}
+
+\subsection{Algorithm 2}
+
+\subsection{Algorithm 3}
+
+\section{Performance Metrics}
+
+\section{Evaluation Methodologies}
+
+\section{Results and Analysis}
+
+\section{Conclusions}
+
+\end{document}
