@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import copy
 
-programs = ['matrix.out', 'matrix.py', 'SingleCore.class']
+programs = ['matrix.out', 'matrix.py']
 
 names_progs = {'matrix.out':'c++', 'SingleCore.class':'java', 'matrix_opt.out':'c++ optimized', 'matrix.py':'python3', 'matrix_opt.out':'c++ optimized'}
 
