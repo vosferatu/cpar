@@ -2,10 +2,10 @@
 
 The Scalable Universal Matrix Multiplication Algorithm is a straightforward, highly efficient, scalable implementation of common matrix multiplication operations.
 
-Implement SUMMA using MPI and compare it to a shared memory algorithm (OpenMP, OpenCLor CUDA).
+Implement *SUMMA* using *MPI* and compare it to a shared memory algorithm (*OpenMP*, *OpenCLor CUDA*).
 
 
-NOTE: Performance analysis consists in analyzing single processor performance and, speedup, efficiency and scalability from 1 to P processorsfor the parallel versions. A *discussion* on the obtained results is also expected.
+NOTE: Performance analysis consists in analyzing single processor performance and, speedup, efficiency and scalability from 1 to P processors for the parallel versions. A **discussion** on the obtained results is also expected.
 
 ### Computing Platforms
 
