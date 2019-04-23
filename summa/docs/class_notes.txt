@@ -1,0 +1,19 @@
+Any Grid of Processors
+Lower Temporary Storage
+
+for(i=0; i<n;i++)                             *
+    for(j=0; j <n;j++)                    switch
+         for(k=0;k<n;k++)                  *
+               C[i,j]+= A[i,k]*B[k*j]
+
+for(k=0;k<n;k++)
+      c[i,i] += A[i,k]*B[k,i]
+
+for each k we are completing a matrix
+
+we are transforming from an inner product to a outer product simulation
+
+we are dividing A in smaller blocks to communicate to the others instead of communicating all the blocks
+we are doing column of a block * line of a block
+
+
