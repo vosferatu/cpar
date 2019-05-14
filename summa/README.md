@@ -22,3 +22,8 @@ Two computing platforms are available in the Lab:
    - Time measures of the parallel programs;
    - Performance evaluation and scalability analysis;
    - Writing and results analysis.
+
+
+
+# Running 
+To compile summa algorithm, type `mpicc summa.c matrix_utils.c -o mpi.o -lm` to compile and `mpiexec --oversubscribe -n 4 ./mpi.o` to run.
