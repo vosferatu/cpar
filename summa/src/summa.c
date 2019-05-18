@@ -243,6 +243,7 @@ int main(int argc, char *argv[]) {
     
     if(rank == 0){
         // Serial multiplication. In order to check the results.
+        /*
         int *d = create_array_as_matrix(size, size);
         MatrixMultiply(size, a, b, d);
         
@@ -250,7 +251,7 @@ int main(int argc, char *argv[]) {
         if(equal){
             printf("\nSUMMA Algorithm gives correct answer\n");
         }
-
+        */
         printf("\nTime: %.4f secs\n", (end - start));
     }
 
