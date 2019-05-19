@@ -1,44 +1,44 @@
 Host Computer: 4770k @4.2GHZ 4 Core 8 Threads, 16GB Ram
 
-NumberPcs:              Number Processes    Matrix Size(MxM)      Time/sec(3 average)	MFLOPS/Node
-2 (2 threads each)      4                   128                   0.0153 		68.53437908496733
-2 (2 threads each)      4                   256                   0.0734    	114.28621253405994
-2 (2 threads each)      4                   512                   0.7285		92.11923678792039
-2 (2 threads each)      4                   1024                  8.8062 		60.965105493856605
-2 (2 threads each)      4                   2048                  106.7564		40.23147367277278
+NumberPcs:              Number Processes    Matrix Size(MxM)      Time/sec(3 average)	MFLOPS/Node		Speedup
+2 (2 threads each)      4                   128                   0.0153 				68.53437908
+2 (2 threads each)      4                   256                   0.0734    			114.2862125
+2 (2 threads each)      4                   512                   0.7285				92.11923678
+2 (2 threads each)      4                   1024                  8.8062 				60.96510549
+2 (2 threads each)      4                   2048                  106.7564				40.23147367
 
 
 NumberPcs:              Number Processes    Matrix Size(MxM)      Time/sec(3 average) 	MFLOPS/Node
-3 (2 threads each)      9                   128                   0.0131 		53.362595419847324
-3 (2 threads each)      9                   256                   0.0431    	129.75417633410672
-3 (2 threads each)      9                   512                   0.4848		92.28391639163915
-3 (2 threads each)      9                   1024                  3.2810 		109.08684588032104
-3 (2 threads each)      9                   2048                  47.2381		60.614451682010916
-3 (2 threads each)      9                   4096                  432.5141		52.96126125213798
+3 (2 threads each)      9                   128                   0.0131 				53.36259541		1.167x
+3 (2 threads each)      9                   256                   0.0431    			129.7541763		1.703x
+3 (2 threads each)      9                   512                   0.4848				92.28391639		1.502x
+3 (2 threads each)      9                   1024                  3.2810 				109.0868458		2.683x
+3 (2 threads each)      9                   2048                  47.2381				60.61445168		2.259x
+3 (2 threads each)      9                   4096                  432.5141				52.96126125
 
 
-NumberPcs:              Number Processes    Matrix Size(MxM)      Time/sec(3 average)	MFLOPS/Node
-4 (8 threads each)      9                   128                   0.0434		24.16073732718894
-4 (8 threads each)      9                   256                   0.1275		65.79300392156863
-4 (8 threads each)      9                   512                   0.6417 		104.57980988000622
-4 (8 threads each)      9                   1024                  4.8678 		98.03578381290201
-4 (8 threads each)      9                   2048                  44.4282		96.6720978117502
-4 (8 threads each)      9                   4096                  570.1504		53.56830348701754
+NumberPcs:              Number Processes    Matrix Size(MxM)      Time/sec(3 average)	MFLOPS/Node 		   
+4 (8 threads each)      9                   128                   0.0434				24.16073732		0.301x
+4 (8 threads each)      9                   256                   0.1275				65.79300392		0.338x
+4 (8 threads each)      9                   512                   0.6417 				104.5798098		0.755x
+4 (8 threads each)      9                   1024                  4.8678 				98.03578381		0.674x
+4 (8 threads each)      9                   2048                  44.4282				96.67209781		1.063x
+4 (8 threads each)      9                   4096                  570.1504				53.56830348		0.758x
                  
 
 NumberPcs:              Number Processes    Matrix Size(MxM)      Time/sec(3 average)	MFLOPS/Node
-4 (8 threads each)      16                  128                   0.0270		19.418074074074074
-4 (8 threads each)      16                  256                   0.3209		13.070439389217825
-4 (8 threads each)      16                  512                   0.6689 		90.95806993765248
-4 (8 threads each)      16                  1024                  2.9745		90.24557270129434
-4 (8 threads each)      16                  2048                  25.9893		82.62953015279365
-4 (8 threads each)      16                  4096                  232.6386		73.84788759904848
+4 (8 threads each)      16                  128                   0.0270				19.41807407		1.607x
+4 (8 threads each)      16                  256                   0.3209				13.07043938		0.397x
+4 (8 threads each)      16                  512                   0.6689 				90.95806993		0.959x
+4 (8 threads each)      16                  1024                  2.9745				90.24557270		1.636x
+4 (8 threads each)      16                  2048                  25.9893				82.62953015		1.709x
+4 (8 threads each)      16                  4096                  232.6386				73.84788759		2.450x
 
 
 NumberPcs:              Number Processes    Matrix Size(MxM)      Time/sec(3 average) 	MFLOPS/Node
-4 (8 threads each)      64                  128                   0.0212		6.182641509433962
-4 (8 threads each)      64                  256                   0.3609		2.9054474923801608
-4 (8 threads each)      64                  512                   0.4689 		17.889972275538494
-4 (8 threads each)      64                  1024                  1.121			59.86517752007136
-4 (8 threads each)      64                  2048                  8.6493		62.07102447596915
-4 (8 threads each)      64                  4096                  61.1264		70.26370432415455
+4 (8 threads each)      64                  128                   0.0212				6.182641509		1.273x
+4 (8 threads each)      64                  256                   0.3609				2.905447492		0.889x
+4 (8 threads each)      64                  512                   0.4689 				17.88997227		1.426x
+4 (8 threads each)      64                  1024                  1.121					59.86517752		2.653x
+4 (8 threads each)      64                  2048                  8.6493				62.07102447		3.004x
+4 (8 threads each)      64                  4096                  71.1264				60.38499482		3.270x
