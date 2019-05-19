@@ -10,7 +10,7 @@ typedef double TYPE;
 #define MAX_DIM 4096*4096
 #define MAX_VAL 10
 #define MIN_VAL 1
-#define ITERATIONS 3
+#define ITERATIONS 1
 
 TYPE** randomSquareMatrix(int dimension);
 TYPE** zeroSquareMatrix(int dimension);
